@@ -1,18 +1,20 @@
 
-# oauth-popup
+# oauth-open
 
-  minimal popup for authenticating through oauth
+  minimal popup for authenticating with oauth
 
 ## Installation
 
 ```
-npm install oauth-popup
+npm install oauth-open
 ```
 
 ## Usage
 
 ```js
-popup('https://www.facebook.com/v2.3/dialog/oauth?...', function(err, code) {
+var open = require('oauth-open');
+
+open('https://www.facebook.com/v2.3/dialog/oauth?...', function(err, code) {
   if (err) throw err;
   console.log(code)
 });
@@ -20,7 +22,7 @@ popup('https://www.facebook.com/v2.3/dialog/oauth?...', function(err, code) {
 
 ## API
 
-### `popup(url, options, fn)`
+### `open(url, options, fn)`
 
 Open a popup and go to the following `url`, calling `fn` when the flow is complete.
 

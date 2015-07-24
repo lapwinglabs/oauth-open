@@ -7,16 +7,16 @@ var assign = require('object-assign');
 var once = require('once');
 
 /**
- * Export `popup`
+ * Export `open`
  */
 
-module.exports = popup;
+module.exports = open;
 
 /**
- * Initialize `popup`
+ * Initialize `open`
  */
 
-function popup(url, options, fn) {
+function open(url, options, fn) {
   options = options || {};
 
   if (2 == arguments.length) {
