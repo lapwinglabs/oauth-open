@@ -1,0 +1,21 @@
+{
+  "name": "oauth-popup",
+  "version": "1.0.0",
+  "description": "minimal popup for authenticating through oauth",
+  "keywords": ["oauth", "popup"],
+  "author": "Matthew Mueller <mattmuelle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LapwingLabs/oauth-popup.git"
+  },
+  "dependencies": {
+    "object-assign": "^3.0.0",
+    "once": "^1.3.2",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}
