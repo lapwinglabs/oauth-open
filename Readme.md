@@ -32,6 +32,10 @@ Available `options` include:
 - left: position of the popup
 - top: position of the popup
 
+## Credits
+
+Extracted from the [satellizer](https://github.com/sahat/satellizer) project.
+
 ## License
 
 (The MIT License)
