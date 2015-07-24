@@ -1,5 +1,5 @@
 {
-  "name": "oauth-popup",
+  "name": "oauth-open",
   "version": "1.0.1",
   "description": "minimal popup for authenticating through oauth",
   "keywords": [
@@ -9,7 +9,7 @@
   "author": "Matthew Mueller <mattmuelle@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/LapwingLabs/oauth-popup.git"
+    "url": "git://github.com/LapwingLabs/oauth-open.git"
   },
   "dependencies": {
     "object-assign": "^3.0.0",
