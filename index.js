@@ -38,7 +38,7 @@ function open(url, options, fn) {
 function poll(popup, fn) {
   var done = once(fn);
 
-  setInterval(function polling() {
+  var intervalId = setInterval(function polling() {
     try {
       var documentOrigin = document.location.host;
       var popupWindowOrigin = popup.location.host;
@@ -53,11 +53,11 @@ function poll(popup, fn) {
       qs = assign(qs, hash);
 
       if (qs.error) {
-        clearInterval(polling);
+        clearInterval(intervalId);
         popup.close();
         done(new Error(qs.error));
       } else {
-        clearInterval(polling);
+        clearInterval(intervalId);
         popup.close();
         done(null, qs);
       }
