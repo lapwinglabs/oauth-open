@@ -41,7 +41,7 @@ function poll(popup, fn) {
   var intervalId = setInterval(function polling() {
     if (popup.closed) {
       clearInterval(intervalId);
-      return
+      return;
     }
     try {
       var documentOrigin = document.location.host;
