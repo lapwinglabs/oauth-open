@@ -39,6 +39,10 @@ function poll(popup, fn) {
   var done = once(fn);
 
   var intervalId = setInterval(function polling() {
+    if (popup.closed) {
+      clearInterval(intervalId);
+      return;
+    }
     try {
       var documentOrigin = document.location.host;
       var popupWindowOrigin = popup.location.host;
@@ -62,7 +66,6 @@ function poll(popup, fn) {
         done(null, qs);
       }
     }
-
   }, 35);
 }
 
