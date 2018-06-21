@@ -1,4 +1,9 @@
 
+1.0.4 / 2018-06-21
+==================
+
+  * clear interval when user manually closes oauth window
+
 1.0.3 / 2016-02-20
 ==================
 
