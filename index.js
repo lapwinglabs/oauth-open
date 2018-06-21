@@ -61,8 +61,9 @@ function poll(popup, fn) {
         popup.close();
         done(null, qs);
       }
+    } else if (popup.closed) {
+      clearInterval(intervalId);
     }
-
   }, 35);
 }
 
